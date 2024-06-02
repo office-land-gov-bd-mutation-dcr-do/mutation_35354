@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>
+        জাতীয় ভূমি-তথ্য ও সেবা কাঠামো
+    </title>
+    <link href="https://mutation.land.gov.bd/favicon.ico" type="image/x-icon" rel="icon"><link href="https://mutation.land.gov.bd/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/style.css">
+    <link rel="stylesheet" type="text/css" href="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/menu.css">
+    <link rel="stylesheet" type="text/css" href="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/font-awesome.min_002.css">
+    <link rel="stylesheet" href="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/link_style.css">
+    <link rel="stylesheet" type="text/css" href="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/accessibility.css">
+    <link rel="stylesheet" href="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/animate.min.css">
+
+<style>
+    @font-face {
+        font-family: 'boishkhi';
+        src: url('https://mutation.land.gov.bd/land-portal-assets/fonts/boishkhi/Boishkhi.eot');
+        src: local('☺'), url('https://mutation.land.gov.bd/land-portal-assets/fonts/Boishkhi.woff') format('woff'), url('https://mutation.land.gov.bd/land-portal-assets/fonts/Boishkhi.ttf') format('truetype'), url('https://mutation.land.gov.bd/land-portal-assets/fonts/Boishkhi.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'kalpurushregular';
+        src: url('https://mutation.land.gov.bd/land-portal-assets/fonts/kalpurush.eot');
+        src: local('☺'), url('https://mutation.land.gov.bd/land-portal-assets/fonts/kalpurush.woff') format('woff'), url('https://mutation.land.gov.bd/land-portal-assets/fonts/kalpurush.ttf') format('truetype'), url('https://mutation.land.gov.bd/land-portal-assets/fonts/kalpurush.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+
+    body{
+        font-family: 'kalpurushregular' !important;
+        font-size: 18px;
+    }
+    #relative_content label input.relative_no, #property_land, #property_silver, #property_gold, #property_taka, #result_table tbody tr td
+    {
+        font-family: 'boishkhi' !important;
+    }
+    .inner_wrapper{
+        background-image: none;
+
+    }
+    .nav>li>a {
+        padding: 14px;
+    }
+    .navbar-collapse {
+     padding-right: 0px;
+    }
+    .default-layout .row .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.trackingForm .col-sm-9{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+    .default-layout .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+.form-horizontal .form-group {
+    margin-left: -15px;
+    margin-right: 0;
+}
+</style>
+<link rel="stylesheet" href="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/support_widget.css"></head>
+<body>
+    <div class="topbar navbar-fixed-top"></div>
+    <div class="main_wrapper">
+        
+<link rel="stylesheet" type="text/css" href="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/stylesheet_kalpurush.css">
+<link rel="stylesheet" type="text/css" href="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/meganizr_new.css">
+<link rel="stylesheet" type="text/css" href="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/style_new_1.css">
+<link rel="stylesheet" type="text/css" href="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/style_new.css">
+<link rel="stylesheet" type="text/css" href="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/responsive_new.css">
+<style type="text/css">
+    .col-md-12{
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+    .all_info{
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+@media (min-width: 768px) and (max-width: 1124px) {
+.navbar-nav {
+    margin-top: 30px !important;
+}
+
+}
+
+@media (min-width: 1125px) and (max-width: 1266px) {
+.navbar-nav {
+    margin-top: 30px !important;
+}
+}
+
+@media (min-width: 1367px) and (max-width: 1680px) {
+.navbar-nav {
+    margin-top: 30px !important;
+}
+}
+
+</style>
+<div class="container transparent_background">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="header-top">
+                <div class="panel">
+                    <div class="panel-heading"><span class="text-left">ভূমি  মন্ত্রণালয়, গণপ্রজাতন্ত্রী বাংলাদেশ সরকার </span>
+                        <span class="text-right">
+                           রবিবার, জুন ২, ২০২৪                     </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container transparent_background">
+    <div class="header">
+        <div class="row">
+            <div class="col-xs-10 col-sm-4 col-md-4 col-lg-4 header-items">
+                <div class="logo left-logo">
+                    <a href="https://mutation.land.gov.bd/"><img src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/logo.png" class="img-responsive" alt=""></a>
+                </div>
+            </div>
+            <div class="col-xs-10 col-sm-4 col-md-4 col-lg-4 header-items">
+                <div class="search" style="display:none;">
+                    <form method="GET" action="http://localhost/ocpl/land-portal/">
+                        <div class="input-group search_land">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                            <input id="search_fields" type="text" class="form-control" name="s" placeholder="খুজুঁন">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-xs-10 col-sm-4 col-md-4 col-lg-4 header-items"><div class="logo right-logo"><a href="https://mutation.land.gov.bd/"><img src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/banner.png" class="img-responsive" alt=""></a></div></div>
+        </div>
+    </div>
+</div>
+<div class="container transparent_background">
+    <!--MenuBar Start-->
+    <div class="sixteen columns" id="jmenu">
+        <div class="sixteen columns">
+            <div class="full-row mob-nav-row" style="display: none;">
+                <a href="javascript:void(0);" class="nav-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                <span> মেনু নির্বাচন করুন</span>
+            </div>
+            <div role="navigation" class="main-menu" id="dawgdrops">
+                <ul id="menu-header-menu" class="meganizr mzr-slide mzr-responsive">
+                    <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home col4 mzr-drop menu-item-12"><a class="submenu" href="https://mutation.land.gov.bd/" aria-current="page">হোম</a></li>
+                    <li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children col4 mzr-drop menu-item-17"><a class="submenu" href="#">মন্ত্রণালয়/বিভাগ/সংস্থা <span class="caret"></span></a>
+                        <div class="mzr-content drop-two-columns">
+                            <ul class="mzr-links">
+                                <li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children submenu-header menu-item-29"><a href="#">মন্ত্রণালয়/বিভাগ/সংস্থা</a>
+                                    <ul class="mzr-links">
+                                        <li id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22"><a href="https://minland.gov.bd/" target="_blank"> ভূমি মন্ত্রনালয়</a></li>
+                                        <li id="menu-item-23" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23"><a href="http://www.lrb.gov.bd/" target="_blank">ভূমি সংস্কার বোর্ড </a></li>
+                                        <li id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24"><a href="http://lab.gov.bd/" target="_blank">ভূমি আপিল বোর্ড </a></li>
+                                        <li id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25"><a href="http://www.dlrs.gov.bd/" target="_blank">ভূমি রেকর্ড ও জরিপ অধিদপ্তর </a></li>
+                                        <li id="menu-item-26" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26"><a href="http://www.latc.gov.bd/" target="_blank">ভূমি প্রশাসন ও প্রশিক্ষণ কেন্দ্র </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div></li>
+                    <li id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children col4 mzr-drop menu-item-18"><a class="submenu" href="#">ভূমি সেবা <span class="caret"></span></a>
+                        <div class="mzr-content drop-two-columns">
+                            <ul class="mzr-links">
+
+                                <li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29"><a href="https://land.gov.bd/%E0%A6%A8%E0%A6%BE%E0%A6%AE%E0%A6%9C%E0%A6%BE%E0%A6%B0%E0%A6%BF-%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE/" target="_blank">নামজারি সেবা</a></li>
+                                <li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29"><a href="https://land.gov.bd/%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%89%E0%A6%A8%E0%A7%8D%E0%A6%A8%E0%A7%9F%E0%A6%A8-%E0%A6%95%E0%A6%B0-%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE/" target="_blank">নামভূমি উন্নয়ন কর সেবা</a></li>
+                                <li id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29"><a href="https://land.gov.bd/%E0%A6%96%E0%A6%BE%E0%A6%B8%E0%A6%9C%E0%A6%AE%E0%A6%BF-%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8B%E0%A6%AC%E0%A6%B8%E0%A7%8D%E0%A6%A4-%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE/" target="_blank">খাসজমি বন্দোবস্ত সেবা</a></li>
+                                <li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29"><a href="https://land.gov.bd/%E0%A6%85%E0%A6%B0%E0%A7%8D%E0%A6%AA%E0%A6%BF%E0%A6%A4-%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A6%BE/" target="_blank">অর্পিত সম্পত্তি ব্যবস্থাপনা সেবা</a></li>
+                                <li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29"><a href="https://land.gov.bd/%E0%A6%B8%E0%A6%BE%E0%A7%9F%E0%A6%B0%E0%A6%BE%E0%A6%A4-%E0%A6%AE%E0%A6%B9%E0%A6%BE%E0%A6%B2-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A6%BE%E0%A6%AA%E0%A6%A8%E0%A6%BE/" target="_blank">সায়রাত মহাল ব্যবস্থাপনা সেবা</a></li>
+                                <li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29"><a href="https://land.gov.bd/%E0%A6%85%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%AF-%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE/" target="_blank">অন্যান্য ভূমিসেবা</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom col4 mzr-drop menu-item-19"><a class="submenu" href="https://land.gov.bd/%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE-%E0%A6%AB%E0%A6%B0%E0%A7%8D%E0%A6%AE/">ভূমি সেবা ফর্ম</a></li>
+                    <li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children col4 mzr-drop menu-item-20"><a class="submenu" href="#">ডিজিটাল গার্ড ফাইল <span class="caret"></span></a>
+                        <div class="mzr-content drop-two-columns">
+
+                            <ul class="mzr-links">
+                                <li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128"><a href="https://land.gov.bd/%E0%A6%A1%E0%A6%BF%E0%A6%9C%E0%A6%BF%E0%A6%9F%E0%A6%BE%E0%A6%B2-%E0%A6%97%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A1-%E0%A6%AB%E0%A6%BE%E0%A6%87%E0%A6%B2/%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%AA%E0%A6%A4%E0%A7%8D%E0%A6%B0-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%BE%E0%A6%AA%E0%A6%A8/" target="_blank">পরিপত্র প্রজ্ঞাপন </a></li>
+                                <li id="menu-item-129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-129"><a href="https://land.gov.bd/%E0%A6%A1%E0%A6%BF%E0%A6%9C%E0%A6%BF%E0%A6%9F%E0%A6%BE%E0%A6%B2-%E0%A6%97%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A1-%E0%A6%AB%E0%A6%BE%E0%A6%87%E0%A6%B2/%E0%A6%A8%E0%A7%80%E0%A6%A4%E0%A6%BF%E0%A6%AE%E0%A6%BE%E0%A6%B2%E0%A6%BE/" target="_blank">নীতিমালা </a></li>
+                                <li id="menu-item-130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-130"><a href="https://land.gov.bd/%E0%A6%A1%E0%A6%BF%E0%A6%9C%E0%A6%BF%E0%A6%9F%E0%A6%BE%E0%A6%B2-%E0%A6%97%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A1-%E0%A6%AB%E0%A6%BE%E0%A6%87%E0%A6%B2/%E0%A6%AC%E0%A6%BF%E0%A6%AC%E0%A6%BF%E0%A6%A7/" target="_blank">বিবিধ</a></li>
+                                <li id="menu-item-131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131"><a href="https://land.gov.bd/%E0%A6%A1%E0%A6%BF%E0%A6%9C%E0%A6%BF%E0%A6%9F%E0%A6%BE%E0%A6%B2-%E0%A6%97%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A1-%E0%A6%AB%E0%A6%BE%E0%A6%87%E0%A6%B2/%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%81%E0%A7%9F%E0%A6%BE%E0%A6%B2/" target="_blank">ম্যানুয়াল</a></li>
+                            </ul>
+                        </div></li>
+                    <li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom col4 mzr-drop menu-item-21"><a class="submenu" href="https://land.gov.bd/%E0%A6%86%E0%A6%87%E0%A6%A8-%E0%A6%93-%E0%A6%AC%E0%A6%BF%E0%A6%A7%E0%A6%BF/">আইন ও বিধি</a></li>
+                </ul>
+            </div>
+            <div class="text-center" style="background: #fff; ">
+                            </div>
+        </div>
+    </div>
+    <!--MenuBar Start end-->
+</div>
+
+<div class="container inner_wrapper">
+
+        <div class="all_info default-layout">
+            <div style="background-color: white;">
+                  <style>
+        table td{
+            font-size: 17px;
+        }
+        #overlay {
+            flow: static(overlay);
+        }
+        #back {
+            position: absolute;
+            background: url(https://mutation.land.gov.bd/land-portal-assets/images/watermark.png) repeat left top;
+            top: 0;
+            bottom: 0;
+            left: -9%;
+            right: 0;
+            opacity: 0.2;
+        }
+    </style>
+
+
+
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div style="width: 99%; padding:0 1% 0 1%; font-size: 100%; margin: 0px;" class="khotian_print_large">
+
+            <div style="margin: 0 auto;width: 80%;">
+                <br>
+                <table class="table" style=";width:100% ;margin-top:2%;margin-left: 0%;margin-right:5%;font-size:100%;border: 1px solid #e3e3e3 " cellspacing="0" cellpadding="5">
+                    <tbody><tr>
+                        <td colspan="2">
+                            <b>খতিয়ান এর পূর্ণাঙ্গ তথ্য দেখতে হলে "খতিয়ান ডাউনলোড" বাটনে ক্লিক করে খতিয়ান ডাউনলোড করুন</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-right: 1px solid #e3e3e3;width: 50%">ভূমি অফিস এর ঠিকানা</td>
+                        <td style="border-right: 1px solid #e3e3e3">ভাটারা, গুলশান, ঢাকা</td>
+                    </tr>
+                    <tr>
+                        <td style="border-right: 1px solid #e3e3e3;width: 50%">খতিয়ান নং</td>
+                        <td style="border-right: 1px solid #e3e3e3">৩৫৩৫৪</td>
+                    </tr>
+                    <tr>
+                        <td style="border-right: 1px solid #e3e3e3;width: 50%">আবেদন নম্বর</td>
+                        <td style="border-right: 1px solid #e3e3e3">৬৪৭৭৯০৮</td>
+                    </tr>
+                    <tr>
+                        <td style="border-right: 1px solid #e3e3e3;width: 50%">আবেদনের তারিখ</td>
+                        <td style="border-right: 1px solid #e3e3e3">
+                           ১২-০৩-২০২৩                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-right: 1px solid #e3e3e3;width: 50%">নামজারি মামলা নং</td>
+                        <td style="border-right: 1px solid #e3e3e3">৭,৩৫৫(IX-I)/২০২২-২৩</td>
+                    </tr>
+                    <tr>
+                        <td style="border-right: 1px solid #e3e3e3;width: 50%">ডি সি আর নং</td>
+                        <td style="border-right: 1px solid #e3e3e3">
+<!--                            -->                           ২৩২৬০১৫০৭৩৫৫                       </td>
+                    </tr>
+                    <tr>
+                        <td style="border-right: 1px solid #e3e3e3;width: 50%">মালিক, অকৃষি প্রজা বা ইজারাদারের নাম ও ঠিকানা</td>
+                        <td style="border-right: 1px solid #e3e3e3">
+                            1) মোঃ আজিম হোসেন<br>পিতা: মোঃ আজিজুল হক, <br> মাতা: মোছাঃ আদুরি বেগম, <br> বাসা/হোল্ডিং: বলরাম নগর গ্রাম/রাস্তা: বলরাম নগর দক্ষিন পাড়া, <br> ডাকঘর: জয়দিয়া-৭৩৩০, থানা: কোটচাদপুর, জেলা: ঝিনাইদহ।<br>                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a target="_blank" href="https://office-land-gov-bd-mutation-dcr-do.github.io/mutation35354a/mutation35354.pdf" class="btn btn-success" style="color: white">খতিয়ান ডাউনলোড</a>
+                        </td>
+                    </tr>
+                </tbody></table>
+                <br>
+                <div style="text-align: left">
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+    <style type="text/css">
+    .visitordot {
+    height: 39px;
+    width: 28px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+
+}
+</style>
+<!-- footer -->
+
+<div class="container transparent_background">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="footer_top_bg">
+                <img class="img-responsive" src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/footer_top_bg.png" alt="">
+            </div>
+        </div>
+    </div>
+</div> <!--container-->
+<div class="container transparent_background">
+    <div class="footer">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="footer-contents">
+                    <div class="fo-title"><h2>গুরুত্বপূর্ণ লিঙ্ক</h2></div>
+                    <div class="foo-content">
+                        <ul>
+                            <li><a href="https://www.bangladesh.gov.bd/" target="_blank" class="saq-external-link-ico">www.bangladesh.gov.bd</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="footer-contents">
+                    <div class="fo-title"><h2>সামাজিক যোগাযোগ </h2></div>
+                    <div class="foo-content text-center">
+                        <a class="social-icons facebook" target="_blank" href="http://www.facebook.com/minland.gov.bd"><i class="fa fa-facebook"></i></a>
+                        <a class="social-icons youtube" target="_blank" href="https://www.youtube.com/channel/UCBlCPkpMK00tcPcdR-DTxrw"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="footer-contents">
+                    <div class="fo-title"><h2>পরিকল্পনা ও বাস্তবায়নে  </h2></div>
+                    <div class="foo-content text-center">
+                        <a href="https://minland.gov.bd/" target="_blank" class=""><img src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/land.png" alt=""></a>
+                        <a href="https://a2i.gov.bd/" target="_blank" class=""><img src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/a2i.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="footer-contents tecnical-support">
+                    <div class="fo-title"><h2>কারিগরি সহায়তায়</h2></div>
+                    <div class="foo-content text-center">
+                        <a href="http://batworld.com/" target="_blank" class=""><img src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/batworld-logo.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!--container-->
+
+<div class="container transparent_background">
+    <div class="footer-bottom">
+        <p>Copyrights © 2022 All Rights Reserved <a href="http://land.gov.bd/" target="_blank" class="saq-external-link-ico" title=" (1 clicks. Last was 1 weeks ago)">Ministry of Land</a>, Government of the People's Republic of Bangladesh</p>
+    </div>
+</div>
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="" data-toggle="tooltip" data-placement="left" data-original-title="" style="display: inline;"><span class="fa fa-chevron-circle-up"></span></a>
+<div id="batworld">
+<!-- Support -->
+<div id="support-icon" style="left: 20px; bottom: 25px">
+  <img id="change-img" src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/u13.png" alt="Help">
+  <p>সাহায্য</p>
+</div>
+<!-- Hide -->
+<div id="support-hide" style="left: 80px; bottom: 70px">
+ <img src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/cancel_black.png" alt="Hide">
+</div>
+<!-- minimize -->
+<div id="batworld-minimize" class="batworld-round-icon batworld-hide" style="left: 20px; bottom: 25px">
+  <img src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/minimize-2.png" alt="minimize">
+  <p>মিনিমাইজ</p>
+</div>
+<!-- কল -->
+<div id="batworld-call" class="batworld-round-icon batworld-hide" style="left: 20px; bottom: 280px;">
+  <img src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/u25.png" alt="call">
+  <p>কল</p>
+</div>
+<!-- ইমেল -->
+<div id="batworld-email" class="batworld-round-icon batworld-hide" style="left: 20px; bottom: 280px;" hidden="">
+  <img src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/u19.png" alt="email">
+  <p>ইমেল</p>
+</div>
+<!-- স্কাইপ -->
+<div id="batworld-skype" class="batworld-round-icon batworld-hide" style="left: 20px; bottom: 280px;" hidden="">
+  <img src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/u16.png" alt="skype">
+  <p>স্কাইপ</p>
+</div>
+<!-- WhatsApp -->
+<div id="batworld-whatsapp" class="batworld-round-icon batworld-hide" style="left: 20px; bottom: 280px" hidden="">
+  <img src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/u13.png" alt="WhatsApp">
+  <p>হোয়াটসঅ্যাপ</p>
+</div>
+<!-- মেসেঞ্জার -->
+<div id="batworld-messenger" class="batworld-round-icon batworld-hide" style="left: 20px; bottom: 220px">
+  <img src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/u7.png" alt="messenger">
+  <p>মেসেঞ্জার</p>
+</div>
+<!-- টিকেট  -->
+<div id="batworld-ticket" class="batworld-round-icon batworld-hide" style="left: 20px; bottom: 160px">
+  <img src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/u37.png" alt="help us">
+  <p>টিকেট</p>
+</div>
+<!-- Help us improve -->
+<div id="batworld-feedback" class="batworld-round-icon batworld-hide" style="left: 20px; bottom: 100px">
+  <img src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/smile.png" alt="feedback">
+  <p>ফিডব্যাক</p>
+</div>
+
+<!-- Rate Your Experience -->
+<div id="rate-your-exp" hidden="">
+  <div class="batworld-flex-container">
+    <div style="flex-grow: 2">
+      <h3>Rate Your Experience</h3>
+    </div>
+    <div style="flex-grow: 1; text-align: right" onclick="rateYourExp()">
+      <img src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/cancel_black.png" class="batworld-cancel" alt="Cancel">
+    </div>
+  </div>
+  <div id="imotion">
+    <img src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/horrible.png" alt="horrible" onclick="emotionClick(1)">
+    <img src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/poor.png" alt="poor" onclick="emotionClick(2)">
+    <img src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/avg.png" alt="average" onclick="emotionClick(3)">
+    <img src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/good.png" alt="good" onclick="emotionClick(4)">
+    <img src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/excellent.png" alt="excellent" onclick="emotionClick(5)">
+  </div>
+  <div class="batworld-flex-container">
+    <div style="flex-grow: 2; text-align: left" class="batworld-satisfied">
+      NOT SATISFIED
+    </div>
+    <div style="flex-grow: 1; text-align: right" class="batworld-satisfied">
+      VERY SATISFIED
+    </div>
+  </div>
+</div>
+<!--Thank you-->
+<div id="thank-you" hidden="">
+  <div class="batworld-flex-container">
+    <div style="flex-grow: 1; text-align: left">
+      <img src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/smile.png" alt="" width="55px" height="55px">
+    </div>
+    <div style="flex-grow: 3; text-align: left">
+      <h3>Thank You!! Tell us more</h3>
+    </div>
+  </div>
+</div>
+<!--Tell us more-->
+<div id="tell-us-more" hidden="">
+  <div id="tell-us-more-header">
+    <div class="batworld-flex-container">
+      <div style="flex-grow: 2; text-align: right">
+        <h3>Tell us more</h3>
+      </div>
+      <div style="flex-grow: 1; text-align: right" onclick="closeTellUs()">
+        <img src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/cancel.png" class="batworld-cancel" alt="Cancel">
+      </div>
+    </div>
+  </div>
+  <!--tell-us-more-header -->
+  <form action="" id="tell-us-more-form">
+    <div id="form-inject"></div>
+    <label for="email">আপনার ইমেইল দিন<b><span style="color: red">*</span></b></label>
+    <input name="email" type="email" placeholder="ইমেইল প্রয়োজন" required="" class="batworld-form-field" id="batworld-email-field">
+        <label for="mobile">মোবাইল নাম্বার<b><span style="color: red">*</span></b></label>
+        <input name="mobile" type="mobile" id="user_mobile" placeholder="মোবাইল নাম্বার প্রয়োজন" class="batworld-form-field" required="">
+   <button type="button" id="batworld-submit-btn" onclick="emailValidatedBA()" style="float: right">
+         Submit
+   </button>
+  </form>
+</div>
+</div>
+<script>
+        
+        window.ba_sw_id = '82d0b069-208a-4dc2-a0f8-37eee4cabd6e';
+        var s1 = document.createElement('script');
+        s1.setAttribute('src', 'https://feedback.oss.net.bd/src/0.1.3/social_widget_link.js');
+        document.body.appendChild(s1);
+    </script>
+
+<script src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/jquery-3.1.1.min.js"></script>
+<script src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/bootstrap.min.js"></script>
+<script>
+// for menu
+$(document).ready(function(){
+    $(".dropdown").hover(
+        function() {
+			if(screen.width>900){
+				$('.dropdown-menu', this).stop( true, true ).show();
+				$(this).toggleClass('open');
+			}
+        },
+        function() {
+			if(screen.width>900){
+				$('.dropdown-menu', this).stop( true, true ).hide();
+				$(this).toggleClass('open');
+			}
+        }
+    );
+});
+
+$(document).ready( function() {
+    $('#myCarousel').carousel({
+        interval:   4000
+  });
+  var clickEvent = false;
+  $('#myCarousel').on('click', '.nav a', function() {
+      clickEvent = true;
+      $('.nav li').removeClass('active');
+      $(this).parent().addClass('active');
+  }).on('slid.bs.carousel', function(e) {
+    if(!clickEvent) {
+      var count = $('.nav').children().length -1;
+      var current = $('.nav li.active');
+      current.removeClass('active').next().addClass('active');
+      var id = parseInt(current.data('slide-to'));
+      if(count == id) {
+        $('.nav li').first().addClass('active');
+      }
+    }
+    clickEvent = false;
+  });
+});
+
+  // for up arrow
+$(document).ready(function(){
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+            $('#back-to-top').fadeIn();
+        } else {
+            $('#back-to-top').fadeOut();
+        }
+    });
+    // scroll body to 0px on click
+    $('#back-to-top').click(function () {
+        $('#back-to-top').tooltip('hide');
+        $('body,html').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
+
+    $('#back-to-top').tooltip('show');
+});
+
+</script>
+<style>
+.navbar-nav {
+    float: left;
+    margin: -1%;
+    padding-bottom: 1%;
+}
+</style>
+</div><script src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/social_widget_link.js"></script><script src="%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A6%AF%E0%A6%BC%20%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%93%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%95%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%AE%E0%A7%8B_files/widget-data.json"></script></body></html>

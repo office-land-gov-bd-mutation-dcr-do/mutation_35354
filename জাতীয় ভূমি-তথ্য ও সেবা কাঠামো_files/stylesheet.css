@@ -1,0 +1,208 @@
+
+.topbar{
+    width: 100%;
+    height: 10px;
+    background-color: #1aa326;
+
+   }
+
+
+
+
+
+
+.main_wrapper{
+	/*background-image: url(../images/bg_main_1920px.jpg);*/
+	background-image: url(https://mutation.land.gov.bd/land-portal-assets/images/bg_main_1920px.jpg);
+	height: auto;
+	background-attachment: fixed;
+
+
+}
+.inner_wrapper{
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.40);
+	/*background-image: url(http://land.gov.bd/land-portal-assets/images/bg_inner.jpg);
+	box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);*/
+	height: auto;
+	font-size: 18px;
+}
+.all_info{
+  padding-top:120px;
+
+
+}
+.container{
+	width: 60%;
+}
+/*info_box*/
+.info_box{
+	margin-top: px;
+	margin-bottom: 30px;
+	width: 100%;
+	background: #f5f5f5;
+	border: 3px solid #ececec;
+	border-radius: 25px 0px 25px 0;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.titel{
+	color: rebeccapurple;
+	font-size: 17px;
+	font-weight: 900;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #ececec;
+}
+
+ul li{
+	padding-bottom: 0px;
+}
+.list-unstyled{
+	padding: 0px 20px 0px 10px;
+	font-size: 16px;
+}
+.fa-fw {
+    width: 2.285714em !important;
+    text-align: center;
+}
+
+
+/*footer*/
+.fa-ul {
+    padding-left: 0px;
+    margin-left: 0px !important;
+    list-style-type: none;
+}
+.footer{
+	width: 100%;
+	background: #f7f7f7;
+	border-top: 8px solid #1aa326;
+	padding-top: 10px;
+	color: #7030a0;
+	font-size: 14px;
+
+}
+.footer h4{
+	border-bottom: 1px solid #bebebe;
+	padding-bottom: 5px;
+
+}
+.footer .list-inline li a{
+	color: #7030a0;
+	padding:0 30px;
+}
+.footer-bottom{
+	width: 100%;
+	height: 10px;
+	background-color: #1aa326;
+}
+.footer .col-md-3{
+	 border: none;
+
+
+}
+.footer .logo_a2i{
+	float: right;
+}
+.footer .logo_bd{
+	margin-left: 135px;
+}
+
+.copy-right-title{
+	color: #696969;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: right;
+}
+
+/*end of footer*/
+
+ .back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 15px;
+    right: 5px;
+    display:none;
+}
+.btn-group-lg>.btn, .btn-lg {
+    padding: 6px 11px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 0px;
+}
+
+.btn-primary{
+	   background-color: #7030a0;
+	   border-color:#7030a0;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+		.main_wrapper{
+			background-image: url(https://mutation.land.gov.bd/land-portal-assets/images/bg_main_768px.jpg);
+			height: auto;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+		.container {
+					/*width: 60%;*/
+					min-width:310px;
+				}
+		.all_info{
+	padding-top: 35px;
+}
+	}
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
+		.main_wrapper{
+			background-image: url(https://mutation.land.gov.bd/land-portal-assets/images/bg_main_1366px.jpg);
+			height: auto;
+
+			background-attachment: fixed;
+		}
+		.container {
+					width: 60%;
+				}
+		.all_info{
+	margin-top: px;
+}
+	}
+@media only screen and (min-width: 1280px) and (max-width: 1366px) {
+		.main_wrapper{
+			background-image: url(https://mutation.land.gov.bd/land-portal-assets/images/bg_main_1366px.jpg);
+			height: auto;
+
+			background-attachment: fixed;
+		}
+		.container {
+					width: 78%;
+				}
+		.all_info{
+			margin-top: px;
+}
+	}
+
+@media only screen and (min-width: 320px) and (max-width: 639px) {
+
+
+		.all_info{
+				padding-top: 5px;
+}
+
+	}
+@media only screen and (min-width: 640px) and (max-width: 1024px) {
+
+
+		.all_info{
+				padding-top: 200px;
+        padding-bottom: 130px;
+}
+	}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+
+
+		.all_info{
+				padding-top: 200px;
+        padding-bottom: 130px;
+}
+	}

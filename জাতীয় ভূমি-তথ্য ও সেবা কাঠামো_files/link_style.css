@@ -1,0 +1,254 @@
+.seba_time{
+	text-align: left;
+}
+.topbar{
+	background-color: #7030a0;
+	color: #ffffff;
+}
+/*main-wrapper*/
+.main_wrapper{
+/*	background-image: url(../images/main_1_bg.jpg);*/
+	background-repeat: repeat;
+
+
+}
+.bg{
+	background: #ffffff;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+}
+
+/*menubar*/
+.menubar{
+	background-color: transparent;
+
+}
+
+.menubar .navbar-default {
+
+
+    background-color: #F2F2F2;
+    border-color: transparent;
+    width: 100%;
+}
+.menubar  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default
+.navbar-nav>.active>a:hover {
+    color: #7030a0;
+    background-color: transparent;
+}
+
+.menubar .navbar-default .navbar-nav>li>a {
+    color: #7030a0;
+}
+.menubar .navbar {
+    position: relative;
+    min-height: 95px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+.menubar .navbar-nav{
+	padding-top: 25px;
+}
+
+
+.menubar .navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 39px;
+    margin-right: 15px;
+    margin-bottom: 18px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.menubar  .dropdown-menu>li>a {
+
+    color: #7030a0;
+    }
+
+
+.title-text{
+	    color: #7030a0;
+
+	    }
+
+
+
+
+
+/*info apply_tracking*/
+.online_info{
+	width: 100%;
+	border: 2px solid #7030a0;
+	background-color: #f2f2f2;
+}
+
+.title_info{
+	background-color: #1aa326;
+	padding: 10px;
+	color: #ffffff;
+    font-size: 18px;
+}
+.online_info_image img{
+	display: block;
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 25px;
+}
+
+.online_tracking{
+	width: 100%;
+	border: 2px solid #7030a0;
+	background-color: #f2f2f2;
+	/*height: 395px;*/
+
+
+}
+
+.online_tracking_form{
+	padding-top: 10px;
+	padding-bottom: 25px;
+
+}
+.form-horizontal .control-label {
+    padding-top: 17px;
+    margin-bottom: 0;
+    text-align: right;
+    font-size: 14px;
+}
+
+
+/*end of apply_tracking*/
+
+<!-- seba_system -->
+/*collapse*/
+
+.main_wrapper .container .description_info .panel-group .panel-default>.panel-heading {
+    color: #333;
+    background-color: #7030a0;
+    border-color: #ddd;
+}
+.description_info .panel-group .panel-default>.panel-heading {
+    color: #ffffff;
+    background-color: #7030a0;
+    border-color: #ddd;
+}
+.description_info{
+	margin-top: 30px;
+}
+<!-- end of seba_system -->
+
+
+
+/*all info*/
+
+.all_seba{
+	margin-top: 40px;
+
+}
+.online_seba{
+	width: 100%;
+	height: 300px;
+	border: 2px solid #7030a0;
+	margin-bottom: 25px;
+}
+.title{
+	background-color: #7030a0;
+	color: #ffffff;
+	padding: 7px;
+	font-size: 16px;
+}
+
+.seba_time{
+	padding: 15px;
+	font-weight: 600;
+	font-size: 17px;
+	color: #7030a0;
+	text-align: left !important;
+}
+
+.process{
+	padding-top: 20px;
+}
+.process a span{
+	padding-top: 25px;
+	font-weight: 600;
+	font-size: 17px;
+	color: #7030a0;
+
+}
+
+
+
+/*social_icon*/
+.social_icon{
+	position: absolute;
+	top: 80px;
+	right: 0px;
+
+}
+.icon_facebook{
+	width: 40px;
+	height: 40px;
+	background-color: #4a6db2;
+	line-height: 40px;
+	color: #ffffff;
+	margin-top: 10px;
+
+}
+.icon_twitter i{
+	width: 40px;
+	height: 40px;
+	background-color: #2caae0;
+	line-height: 40px;
+	color: #ffffff;
+	margin-top: 10px;
+}
+.icon_youtube i{
+	width: 40px;
+	height: 40px;
+	background-color: #e02a26;
+	line-height: 40px;
+	color: #ffffff;
+	margin-top: 10px;
+}
+.icon_google_plus i{
+	width: 40px;
+	height: 40px;
+	background-color: #e02a26;
+	line-height: 40px;
+	color: #ffffff;
+	margin-top: 10px;
+}
+
+/*footer*/
+
+.footer{
+	width: 100%;
+	background: #f7f7f7;
+	border-top: 10px solid #7030a0;
+	margin-top: 25px;
+	padding-top: 30px;
+	font-size: 15px;
+}
+.footer .list-inline li a{
+	color: #7030a0;
+	padding:0 30px;
+}
+
+.logo img{
+	margin-top:20px;
+	width: 50%;
+}
+.footer-title{
+	font-size: 10px;
+	margin-top: -20px;
+}
+.footer .logo img{
+	padding-top: 20px;
+	margin-top: -20px;
+}
+/*end of footer*/

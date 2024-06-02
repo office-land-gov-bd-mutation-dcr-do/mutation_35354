@@ -1,0 +1,398 @@
+@media (max-width: 1199px) {
+	.meganizr > li.col4 {
+		display: inline-block;
+		float: none;
+	}
+	   .meganizr li {
+		list-style: none;
+		text-align: left;
+	}
+
+	.mzr-responsive{
+		text-align: center;
+	}
+	.marquee_scolling marquee {
+		width: 90%;
+	}
+
+	.flexslider .flex-direction-nav .flex-next,
+	.flexslider:hover .flex-direction-nav .flex-next,
+	.flexslider:hover .flex-direction-nav .flex-next:hover {
+		right: -10px;
+	}
+	.flexslider .flex-direction-nav .flex-prev,
+	.flexslider:hover .flex-direction-nav .flex-prev,
+	.flexslider:hover .flex-direction-nav .flex-prev:hover {
+		left: -35px;
+	}
+	.land_tab_menu{
+		width: 75%;
+		margin: 0 auto;
+	}
+	.land_tab {
+		min-height: 265px;
+	}
+
+	#myCarousel .carousel-inner>.item>a>img,
+	#myCarousel .carousel-inner>.item>img {
+		line-height: 1;
+		display: block;
+		text-align: center;
+		margin: 0px auto;
+		padding: 13px 0px;
+	}
+
+	.land_tab .nav-tabs li a {
+		font-size: 15px;
+	}
+	.nav > li > a {
+		padding: 10px 10px;
+	}
+	.left-side .menu-image-title {
+		left: 50px;
+		font-size: 14px;
+	}
+
+	.left-side {
+		background-color: #8dc642;
+		padding: 30px 20px;
+		min-height: auto;
+	}
+		.pl-0 {
+		padding-left: 15px;
+	}
+
+	.marquee_scolling ul li{
+		width: 80%;
+	}
+	.marquee_scolling marquee {
+		width: 70%;
+	}
+}
+@media (max-width: 991px) {
+	.meganizr > li.col4 {
+		display: inline-block;
+		float: none;
+	}
+	   .meganizr li {
+		list-style: none;
+		text-align: left;
+	}
+
+	.mzr-responsive{
+		text-align: center;
+        margin-left: 0px !important;
+	}
+	.marquee_scolling marquee {
+		width: 90%;
+	}
+
+	.flexslider .flex-direction-nav .flex-next,
+	.flexslider:hover .flex-direction-nav .flex-next,
+	.flexslider:hover .flex-direction-nav .flex-next:hover {
+		right: -10px;
+	}
+	.flexslider .flex-direction-nav .flex-prev,
+	.flexslider:hover .flex-direction-nav .flex-prev,
+	.flexslider:hover .flex-direction-nav .flex-prev:hover {
+		left: -35px;
+	}
+	.land_tab_menu{
+		width: 75%;
+		margin: 0 auto;
+	}
+	.land_tab {
+		min-height: 265px;
+	}
+
+	#myCarousel .carousel-inner>.item>a>img,
+	#myCarousel .carousel-inner>.item>img {
+		line-height: 1;
+		display: block;
+		text-align: center;
+		margin: 0px auto;
+		padding: 13px 0px;
+	}
+
+	.land_tab .nav-tabs li a {
+		font-size: 15px;
+	}
+	.nav > li > a {
+		padding: 10px 10px;
+	}
+	.left-side .menu-image-title {
+		left: 50px;
+		font-size: 14px;
+	}
+
+	.left-side {
+		background-color: #8dc642;
+		padding: 30px 20px;
+		min-height: auto;
+	}
+		.pl-0 {
+		padding-left: 15px;
+	}
+
+	.marquee_scolling ul li{
+		width: 80%;
+	}
+	.marquee_scolling marquee {
+		width: 85%;
+	}
+	.tecnical-support img {
+		width: 150px;
+	}
+	.header-items{
+		margin: 0 auto;
+		float: none;
+		margin-bottom: 15px;
+	}
+}
+@media (max-width: 767px) {
+	.land_tab .nav-tabs li a {
+		font-size: 15px;
+	}
+	.nav > li > a {
+		padding: 10px 10px;
+	}
+	.left-side .menu-image-title {
+		left: 50px;
+		font-size: 14px;
+	}
+	.slick-prev {
+		bottom: 46%;
+		left: -20px;
+	}
+	.slick-list {
+		margin-left: 0px;
+	}
+	.slick-next {
+		bottom: 46%;
+		right: -10px;
+	}
+	.footer_top_bg a {
+		font-size: 15px;
+		top: -7px;
+	}
+	.footer_top_bg img {
+		margin-top: -40px;
+	}
+	.marquee_scolling marquee {
+		width: 70%;
+	}
+
+	.land_tab .nav-tabs li a {
+		font-size: 15px;
+	}
+	.nav > li > a {
+		padding: 10px 10px;
+	}
+	.left-side .menu-image-title {
+		left: 50px;
+		font-size: 14px;
+	}
+	.pl-0 {
+		padding-left: 15px;
+	}
+
+	.left-side {
+		background-color: #8dc642;
+		padding: 30px 20px;
+		min-height: auto;
+	}
+
+	.meganizr > li.col4 {
+		width: 100%;
+	}
+	.header-top span {
+		float: none !important;
+		display: block;
+		text-align: center;
+	}
+
+    .contact-banner {
+        display: none;
+    }
+
+    #contact {
+        margin: 0px auto;
+		background: #f9f9f9;
+		padding: 25px;
+		box-shadow: 0 0 20px 0 rgba(0,0,0,.2), 0 5px 5px 0 rgba(0,0,0,.24);
+		max-width: 300px;
+		margin-top: 70px;
+		margin-bottom: 70px;
+	}
+
+    .land_video {
+		padding-bottom: 8px;
+		padding-top: 6px;
+	}
+
+	.search_land{
+		margin-top: 15px;
+	}
+
+	.marquee_scolling ul li{
+		width: 80%;
+	}
+	.slick-prev {
+		bottom: 41%;
+		left: -20px;
+	}
+	.slick-list {
+		margin-left: 0px;
+	}
+	.slick-next {
+		bottom: 41%;
+		right: 15px;
+	}
+	.marquee_scolling marquee {
+		width: 70%;
+	}
+	.land_services_counter .media-body {
+		padding-top: 8px;
+	}
+	.media {
+		margin-top: 0px;
+	}
+	.land_services_counter {
+		padding: 15px 5px 5px;;
+	}
+	.tecnical-support img {
+		width: 150px;
+	}
+	.header-items{
+		margin: 0 auto;
+		float: none;
+		margin-bottom: 15px;
+	}
+	.citizen-box span{font-size: 14px;}
+	#menu-header-menu {
+		text-align: center;
+		margin-left: 0;
+		background: #ddd;
+		border: 0;
+	}
+}
+@media (max-width: 599px) {
+	.land_tab .nav-tabs li a {
+		font-size: 12px;
+	}
+	.nav > li > a {
+		padding: 10px 10px;
+	}
+	.left-side .menu-image-title {
+		left: 50px;
+		font-size: 14px;
+	}
+	.slick-prev {
+		bottom: 46%;
+		left: -20px;
+	}
+	.slick-list {
+		margin-left: 0px;
+	}
+	.slick-next {
+		bottom: 46%;
+		right: -10px;
+	}
+	.footer_top_bg a {
+		font-size: 15px;
+		top: -7px;
+	}
+	.footer_top_bg img {
+		margin-top: -40px;
+	}
+	.marquee_scolling marquee {
+		width: 70%;
+	}
+	.land_services_counter .media-body {
+		padding-top: 8px;
+	}
+	.land_services_counter .media-body p{
+		margin: 0;
+	}
+	.media {
+		margin-top: 0px;
+	}
+	.land_services_counter {
+		padding: 15px 5px 5px;;
+	}
+	.tecnical-support img {
+		width: 150px;
+	}
+	.header-items{
+		margin: 0 auto;
+		float: none;
+		margin-bottom: 15px;
+	}
+	.header-top .panel-heading span, .fo-title h2 {
+		font-size: 16px;
+	}
+	.citizen-box span{font-size: 14px;}
+	#menu-header-menu {
+		text-align: center;
+		margin-left: 0;
+		background: #ddd;
+		border: 0;
+	}
+}
+@media (max-width: 360px) {
+	.left-side .menu-image-title {
+		left: 50px;
+		font-size: 14px;
+	}
+	.marquee_scolling marquee {
+		width: 60%;
+	}
+
+	.header-items{
+		margin: 0 auto;
+		float: none;
+		margin-bottom: 15px;
+	}
+	.header-top .panel-heading span, .fo-title h2 {
+		font-size: 16px;
+	}
+	.land_tab .nav-tabs{
+		margin-left: 30px;
+	}
+	.citizen-box span{font-size: 14px;}
+	#menu-header-menu {
+		text-align: center;
+		margin-left: 0;
+		background: #ddd;
+		border: 0;
+	}
+}
+@media (max-width: 320px) {
+	.left-side .menu-image-title {
+		left: 42px;
+		font-size: 14px;
+		top: -3px;
+	}
+	.marquee_scolling marquee {
+		width: 60%;
+	}
+
+	.header-items{
+		margin: 0 auto;
+		float: none;
+		margin-bottom: 15px;
+	}
+	.header-top .panel-heading span, .fo-title h2 {
+		font-size: 16px;
+	}
+	.citizen-box span{font-size: 14px;}
+
+	#menu-header-menu {
+		text-align: center;
+		margin-left: 0;
+		background: #ddd;
+		border: 0;
+	}
+}
+
+
